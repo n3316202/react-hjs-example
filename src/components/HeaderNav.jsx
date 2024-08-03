@@ -1,13 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import routes from '../route/Routes';
 
 const HeaderNav = () => {
   return (
     <div className='text-center mt-3'>
-      <Link to={'/'}>Home</Link> | 
-      <Link to={'/board'}> Board</Link> | 
-      <Link to={'/profile'}> Profile</Link>
-    </div>
+      {
+          routes.map((route,index) => (
+             //console.log(route.path)
+            <Link key={route.path || index} to={route.path}>{route.title} | </Link>           
+          ))
+      }
+    </div>      
   );
 };
 

@@ -3,10 +3,14 @@ import BootStrapButton from './components/BootstrapExample';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import HeaderNav from './components/HeaderNav';
-import HomePage from './pages/HomePage';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import BoardPage from './pages/BoardPage';
-import ProfilePage from './pages/ProfilePage';
+import routes from './route/Routes';
+
+// https://innovatorwhy.tistory.com/12
+// route 동적 생성
+
+
 
 function App() {
 
@@ -14,9 +18,17 @@ function App() {
     <BrowserRouter>
       <HeaderNav/>
       <Routes>
-          <Route path="/" element={<HomePage />} />
+        {
+          routes.map((route,index) =>{
+            return(
+              <Route key={route.path || index} path={route.path} element={route.element}>      
+             </Route>
+            );
+          })
+        }
+          {/* <Route path="/" element={<HomePage />} />
           <Route path="/board" element={<BoardPage />} />
-          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/profile" element={<ProfilePage />} /> */}
       </Routes>
     </BrowserRouter>    
   )

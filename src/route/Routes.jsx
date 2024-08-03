@@ -1,18 +1,27 @@
 import React from 'react';
+import BoardPage from '../pages/BoardPage';
+import HomePage from '../pages/HomePage';
+import ProfilePage from '../pages/ProfilePage';
 
-export default [
+//React Routes, Route 사용시 배열로 관리하기
+//https://innovatorwhy.tistory.com/12
+const routes = [
   {
       path: '/',
-      component: Home
+      element: <HomePage />,
+      title:'Home'
+
   },
   {
-      path: '/movies',
-      component: Movies
+      path: '/board',
+      element: <BoardPage />,
+      title:'Board'
   },
   {
-      path: '/users',
-      component: Users
+      path: '/profile',
+      element: <ProfilePage />,
+      title:'Profile'
   },
 ];
 
-
+export default routes

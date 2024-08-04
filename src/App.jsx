@@ -1,7 +1,6 @@
 import BootStrapButton from './components/BootstrapExample';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
 import HeaderNav from './components/HeaderNav';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -17,6 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <HeaderNav/>
+      <div className='text-center mt-5'>
       <Routes>
         {
           routes.map((route,index) =>{
@@ -30,6 +30,7 @@ function App() {
           <Route path="/board" element={<BoardPage />} />
           <Route path="/profile" element={<ProfilePage />} /> */}
       </Routes>
+      </div>
     </BrowserRouter>    
   )
 }

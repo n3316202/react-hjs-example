@@ -7,6 +7,7 @@ import ThreePage from '../pages/ThreePage';
 import UseStatePage from '../pages/UseStatePage';
 import GradePage from '../pages/GradePage';
 import UseRefExamplePage from '../pages/UseRefExamplePage';
+import UseRefDomPage from '../pages/UseRefDomPage';
 
 //React Routes, Route 사용시 배열로 관리하기
 //https://innovatorwhy.tistory.com/12
@@ -51,6 +52,11 @@ const routes = [
     path: '/useref',
     element: <UseRefExamplePage/>,
     title:'useRef예제'
+  },
+  {
+    path: '/useref2',
+    element: <UseRefDomPage/>,
+    title:'useRef_Dom_예제'
   }
 ];
 

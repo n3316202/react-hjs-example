@@ -9,6 +9,7 @@ import GradePage from '../pages/GradePage'
 import UseRefExamplePage from '../pages/UseRefExamplePage'
 import UseRefDomPage from '../pages/UseRefDomPage'
 import AxiosPage from '../pages/AxiosPage'
+import UseEffectPage from '../pages/UseEffectPage'
 
 //React Routes, Route 사용시 배열로 관리하기
 //https://innovatorwhy.tistory.com/12
@@ -62,6 +63,11 @@ const routes = [
         path: '/axios',
         element: <AxiosPage />,
         title: 'axios 예제',
+    },
+    {
+        path: '/effect',
+        element: <UseEffectPage />,
+        title: '유즈이펙트(useEffect)',
     },
 ]
 

@@ -17,7 +17,7 @@ const AxiosExample = () => {
             })
             .catch(function (error) {
                 //handle error
-                console.log(console.error())
+                console.log(error)
             })
             .then(function () {
                 console.log('무조건 실행')

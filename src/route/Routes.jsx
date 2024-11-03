@@ -9,6 +9,7 @@ import GradePage from '../pages/GradePage'
 import UseRefExamplePage from '../pages/UseRefExamplePage'
 import UseRefDomPage from '../pages/UseRefDomPage'
 import ContextApiExPage from '../pages/ContextApiExPage'
+import ContextApiExPage2 from '../pages/ContextApiExPage2'
 
 //React Routes, Route 사용시 배열로 관리하기
 //https://innovatorwhy.tistory.com/12
@@ -62,6 +63,11 @@ const routes = [
         path: '/contextapi',
         element: <ContextApiExPage />,
         title: '컨텍스트API 안쓴 예제',
+    },
+    {
+        path: '/contextapi2',
+        element: <ContextApiExPage2 />,
+        title: '컨텍스트API 쓴 예제',
     },
 ]
 

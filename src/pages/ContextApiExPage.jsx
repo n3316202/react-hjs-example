@@ -13,7 +13,7 @@ function Parent({ value }) {
 }
 
 function Child({ value }) {
-    return <GrandChild value={value} />
+    return <div>Received: {value}</div>
 }
 
 export default ContextApiExPage

@@ -1,4 +1,4 @@
-import BootStrapButton from './components/BootstrapExample'
+import BootStrapButton from './components/BootstrapButton'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/Header'
@@ -10,5 +10,6 @@ function App() {
             <BootStrapButton />
         </>
     )
+}
 
 export default App

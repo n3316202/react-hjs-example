@@ -1,4 +1,3 @@
-import React from 'react'
 import BoardPage from '../pages/BoardPage'
 import HomePage from '../pages/HomePage'
 import ProfilePage from '../pages/ProfilePage'

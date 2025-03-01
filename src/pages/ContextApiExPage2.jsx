@@ -22,9 +22,16 @@ function Parent() {
     return <Child />
 }
 
+// function Child() {
+//     const test = useContext(MyContext)
+//     return <div>안녕하세요: {test}</div>
+// }
+//
 function Child() {
-    const test = useContext(MyContext)
-    return <div>안녕하세요: {test}</div>
+    return (
+        <MyContext.Consumer>
+            {(value) => <div>안녕하세요: {value}</div>}
+        </MyContext.Consumer>
+    )
 }
-
 export default ContextApiExPage2
